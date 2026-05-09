@@ -97,6 +97,8 @@ export default function Hero() {
                   <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.1em]">Join Community</span>
                 </a>
+              </div>
+
               <div className="flex flex-col sm:flex-row items-center gap-4 pt-6 border-t border-primary/5">
                 <div className="flex items-center gap-3 px-4 py-2 bg-[#F0F7ED] rounded-xl border border-emerald-100 shadow-sm">
                   <svg className="w-5 h-5" viewBox="0 0 24 24">
