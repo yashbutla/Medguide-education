@@ -19,30 +19,41 @@ const marqueeItems = [
 
 export default function Marquee() {
   return (
-    <div className="h-10 md:h-14 bg-brand overflow-hidden border-b border-white/20 fixed top-0 left-0 right-0 z-[60] flex items-center shadow-[0_4px_30px_rgba(212,168,67,0.3)]">
-      <div className="absolute inset-0 bg-gradient-to-r from-brand via-white/10 to-brand mix-blend-overlay animate-pulse pointer-events-none" />
+    <div className="h-10 md:h-12 bg-[#0F172A] overflow-hidden border-b border-white/10 fixed top-0 left-0 right-0 z-[60] flex items-center shadow-lg">
+      {/* Background Shimmer Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full animate-[shimmer_3s_infinite] pointer-events-none" />
       
       <motion.div
         animate={{
           x: ["0%", "-50%"],
         }}
         transition={{
-          duration: 15,
+          duration: 30, // Much slower for better readability
           repeat: Infinity,
           ease: "linear",
         }}
-        whileHover={{ scale: 1.02 }}
-        className="flex whitespace-nowrap gap-12 md:gap-20 items-center cursor-default"
+        whileHover={{ x: "0%", transition: { duration: 0.5 } }} // Optional: slows down on hover
+        className="flex whitespace-nowrap gap-12 md:gap-24 items-center"
       >
         {[...marqueeItems, ...marqueeItems].map((item, index) => (
-          <div key={index} className="flex items-center gap-6 md:gap-10 group">
-            <span className="text-white text-xs md:text-lg font-black uppercase tracking-[0.3em] drop-shadow-sm group-hover:text-[#0F172A] transition-colors duration-300">
+          <div key={index} className="flex items-center gap-6 md:gap-10">
+            <span className="text-brand text-xs md:text-sm font-black uppercase tracking-[0.4em] relative group cursor-default">
               {item}
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent bg-[length:200%_100%] animate-[shimmer_2s_infinite] bg-clip-text text-transparent">
+                {item}
+              </span>
             </span>
-            <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/60 shadow-[0_0_10px_white] animate-pulse" />
+            <div className="w-1.5 h-1.5 rounded-full bg-brand/40 shadow-[0_0_8px_#D4A843]" />
           </div>
         ))}
       </motion.div>
+
+      <style jsx>{`
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+      `}</style>
     </div>
   );
 }
