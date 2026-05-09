@@ -73,7 +73,7 @@ export default function Testimonials() {
 
       <div className="mt-16 text-center">
         <a 
-          href="https://www.google.com/maps/place/MedGuide+Education+consultancy/@19.100704,74.7282234,16.75z/data=!4m8!3m7!1s0x3bdcb1e4dcbd21fd:0x1be2523a69263ab0!8m2!3d19.1012411!4d74.7312774!9m1!1b1!16s%2Fg%2F11y4vdl4cm?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" 
+          href="https://share.google/uJLuW1Waq3WaSHKfx" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white border border-primary/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-primary font-black uppercase tracking-widest text-[10px]"
