@@ -56,9 +56,6 @@ export default function ExitIntentPopup() {
 
             <Form compact />
 
-            <p className="text-[8px] md:text-[10px] text-text-muted uppercase tracking-[0.2em] md:tracking-[0.3em] font-black mt-4 md:mt-6">
-              Trusted by 15,000+ Future Doctors
-            </p>
           </motion.div>
 
         </motion.div>

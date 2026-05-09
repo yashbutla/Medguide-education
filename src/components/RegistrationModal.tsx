@@ -84,13 +84,6 @@ export default function RegistrationModal() {
 
                 <Form compact />
 
-                <div className="mt-8 pt-8 border-t border-primary/5 flex items-center justify-center">
-                  <div className="flex -space-x-2">
-                    <img src="/students/s1.png" alt="Student" className="w-8 h-8 rounded-full border-2 border-white shadow-sm object-cover" />
-                    <img src="/students/s2.png" alt="Student" className="w-8 h-8 rounded-full border-2 border-white shadow-sm object-cover" />
-                    <img src="/students/s3.png" alt="Student" className="w-8 h-8 rounded-full border-2 border-white shadow-sm object-cover" />
-                  </div>
-                </div>
               </div>
             </motion.div>
           </div>

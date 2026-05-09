@@ -8,7 +8,7 @@ const row2 = ["r10", "r11", "r12", "r13", "r14", "r15", "r16", "r17"];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 md:py-24 relative bg-[#F8FAFC] overflow-hidden scroll-mt-24 md:scroll-mt-32">
+    <section id="testimonials" className="py-12 md:py-20 relative bg-[#F8FAFC] overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
@@ -18,10 +18,10 @@ export default function Testimonials() {
                   <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest ml-1">4.9/5 Rating</span>
+              <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest ml-1">4.9/5 Rating</span>
             </div>
-          <h2 className="text-3xl md:text-5xl font-heading font-black mb-6 text-primary">Student <span className="text-brand">Wall of Love</span></h2>
-          <p className="text-text-muted max-w-2xl mx-auto font-medium">Actual screenshots of reviews from students and parents who trust MedGuide Education.</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-primary">Student <span className="text-brand">Wall of Love</span></h2>
+          <p className="text-text-muted max-w-2xl mx-auto font-normal">Actual screenshots of reviews from students and parents who trust MedGuide Education.</p>
         </div>
       </div>
 

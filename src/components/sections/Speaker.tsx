@@ -5,90 +5,45 @@ import { Users, Globe, GraduationCap, ArrowRight, MessageCircle } from "lucide-r
 
 export default function Speaker() {
   return (
-    <section id="mentorship" className="py-16 md:py-24 relative overflow-hidden bg-white scroll-mt-24 md:scroll-mt-32">
+    <section id="mentorship" className="py-12 md:py-20 relative overflow-hidden bg-white scroll-mt-24 md:scroll-mt-32">
       <div className="container max-w-7xl mx-auto px-4 md:px-12 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        {/* Centered Title at the Start */}
+        <div className="text-center mb-12 md:mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-3xl md:text-5xl font-heading font-bold leading-tight text-primary"
+          >
+            Meet Your <span className="text-brand">Mentor.</span>
+          </motion.h2>
+        </div>
 
-          <div className="w-full lg:w-1/2 relative">
-            <div className="relative aspect-[4/5] rounded-[32px] md:rounded-[60px] overflow-hidden shadow-xl md:premium-shadow group">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 max-w-5xl mx-auto">
+          {/* Smaller, More Compact Image Container */}
+          <div className="w-full max-w-sm relative">
+            <div className="relative aspect-[4/5] rounded-[32px] md:rounded-[48px] overflow-hidden shadow-2xl group">
               <img
                 src="/mentor_mrunal_gagare_1778236818385.jpg"
                 alt="Dr. Mrunal Gagare"
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60" />
-
-              <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10">
-                <div className="glass-light p-4 md:p-6 rounded-2xl md:rounded-[32px] border-white/20">
-                  <p className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-brand mb-1">CEO & Founder</p>
-                  <p className="text-base md:text-xl font-black text-primary leading-none">8+ Years Experience</p>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-40" />
+            </div>
+            
+            {/* Pulsing Experience Badge */}
+            <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8">
+              <div className="bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-xl border border-primary/5 text-center">
+                <p className="text-[8px] md:text-[10px] font-medium uppercase tracking-widest text-brand mb-1">Experience</p>
+                <p className="text-base md:text-xl font-bold text-primary leading-none">8+ Years</p>
               </div>
             </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -top-10 -left-10 w-32 md:w-40 h-32 md:h-40 bg-brand/5 blur-3xl rounded-full -z-10" />
-            <div className="absolute -bottom-10 -right-10 w-48 md:w-60 h-48 md:h-60 bg-accent/5 blur-3xl rounded-full -z-10" />
           </div>
 
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-brand/5 border border-brand/10 mb-6 md:mb-8"
-            >
-              <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand">The Visionary</span>
-            </motion.div>
-
-            <h2 className="text-3xl md:text-5xl font-heading font-black mb-6 md:mb-8 text-primary leading-tight">
-              Meet Your <br />
-              <span className="text-brand">Mentor.</span>
-            </h2>
-
-            <p className="text-xl md:text-2xl font-black text-primary mb-4 md:mb-6">Dr. Mrunal Gagare</p>
-            <p className="text-sm md:text-lg text-text-muted font-bold mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify md:text-left">
+            <p className="text-2xl md:text-4xl font-bold text-primary mb-6">Dr. Mrunal Gagare</p>
+            <p className="text-sm md:text-lg text-text-muted font-normal leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify md:text-left">
               Director, Medguide Education. A practicing doctor and education strategist who has dedicated 8 years to helping Indian students bypass donation culture and find quality medical education worldwide.
-              <br /><br className="hidden md:block" />
-              This webinar is 100% Free, but the insights shared could save you years of struggle and lakhs in unnecessary fees.
             </p>
-
-            <div className="grid grid-cols-2 gap-6 md:gap-10 mb-8 md:mb-12">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 md:gap-5">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-surface flex items-center justify-center text-brand shadow-sm shrink-0">
-                  <GraduationCap className="w-5 h-5 md:w-6 md:h-6" />
-                </div>
-                <div>
-                  <p className="text-[8px] md:text-[10px] text-text-muted uppercase font-black tracking-widest">Education</p>
-                  <p className="text-xs md:text-sm font-black text-primary">MBBS</p>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 md:gap-5">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-surface flex items-center justify-center text-brand shadow-sm shrink-0">
-                  <Globe className="w-5 h-5 md:w-6 md:h-6" />
-                </div>
-                <div>
-                  <p className="text-[8px] md:text-[10px] text-text-muted uppercase font-black tracking-widest">Focus</p>
-                  <p className="text-xs md:text-sm font-black text-primary">Career Strategy</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-              <button 
-                onClick={() => window.dispatchEvent(new CustomEvent('open-registration-modal'))}
-                className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 btn-premium rounded-xl md:rounded-[20px] font-black uppercase tracking-widest text-[10px] md:text-sm flex items-center justify-center gap-3 group"
-              >
-                Register Now <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <a 
-                href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white border border-primary/10 rounded-xl md:rounded-[20px] font-black uppercase tracking-widest text-[10px] md:text-sm flex items-center justify-center gap-3 hover:bg-secondary transition-all"
-              >
-                <MessageCircle className="w-4 h-4 md:w-5 md:h-5 text-emerald-500" /> Join Community
-              </a>
-            </div>
           </div>
         </div>
       </div>

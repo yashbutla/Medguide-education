@@ -13,15 +13,15 @@ const outcomes = [
 
 export default function Outcomes() {
   return (
-    <section className="py-16 md:py-24 relative bg-secondary/50">
+    <section className="py-12 md:py-20 relative bg-secondary/50">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-24">
           <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-3xl md:text-5xl font-heading font-black mb-6 md:mb-8 text-primary">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 md:mb-8 text-primary">
               What You'll <br />
               <span className="text-brand">Master in this Webinar</span>
             </h2>
-            <p className="text-text-muted mb-8 md:mb-12 text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-text-muted mb-8 md:mb-12 text-base md:text-lg font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
               We've condensed years of consultancy expertise into a 90-minute high-value masterclass to help you make the most informed decision of your life.
             </p>
 
@@ -38,7 +38,7 @@ export default function Outcomes() {
                   <div className="mt-1 p-1 bg-primary/5 rounded-lg shrink-0">
                     <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                   </div>
-                  <span className="text-primary font-bold text-xs md:text-sm leading-tight">{outcome}</span>
+                  <span className="text-primary font-medium text-xs md:text-sm leading-tight">{outcome}</span>
                 </motion.div>
               ))}
             </div>

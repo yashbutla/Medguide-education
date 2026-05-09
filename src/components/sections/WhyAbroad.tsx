@@ -28,20 +28,20 @@ const reasons = [
 ];
 
 const stats = [
-  { value: "8+", label: "Years Excellence", sub: "Navigating Admissions", icon: ShieldCheck },
-  { value: "2,500+", label: "Success Stories", sub: "Studying Globally", icon: Users },
-  { value: "Doctors", label: "Led Institution", sub: "Not Commissions Driven", icon: Award },
+  { value: "8+", label: "Years of Excellence", sub: "We’ve seen the rules change and we know how to navigate them.", icon: Award },
+  { value: "2,500+", label: "Success Stories", sub: "Our students are currently studying in top government and private universities globally.", icon: Users },
+  { value: "End-to-End", label: "Support", sub: "From the first counseling session to getting your visa and hostel—we handle it all.", icon: GraduationCap },
 ];
 
 export default function WhyAbroad() {
   return (
-    <section id="why-abroad" className="py-16 md:py-24 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
+    <section id="why-abroad" className="py-12 md:py-20 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <SectionDivider color="white" />
       <FloatingBlobs />
       <MedicalGrid />
 
       <div className="container max-w-7xl mx-auto px-4 md:px-12 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-center mb-20 md:mb-32">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-center">
           <div className="flex-1 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -49,17 +49,17 @@ export default function WhyAbroad() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand/5 border border-brand/10 mb-6"
             >
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-[10px] font-black uppercase tracking-widest text-brand">Why MedGuide?</span>
+              <span className="text-[10px] font-medium uppercase tracking-widest text-brand">Why MedGuide?</span>
             </motion.div>
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="text-3xl md:text-5xl font-heading font-black text-primary mb-6 md:mb-8"
+              className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6 md:mb-8"
             >
               Led by <br />
               <span className="text-brand">Doctors, Not Agents.</span>
             </motion.h2>
-            <p className="text-base md:text-xl text-text-muted font-bold leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-base md:text-xl text-text-muted font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
               Medguide Education is the only institution run by practicing doctors. We bypass the "agent traps" to focus on your medical career success.
             </p>
           </div>
@@ -81,9 +81,9 @@ export default function WhyAbroad() {
                     <stat.icon className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   
-                  <p className="text-4xl md:text-6xl font-heading font-black text-primary mb-2 group-hover:text-brand transition-colors duration-500">{stat.value}</p>
-                  <p className="text-xs md:text-sm font-black text-primary uppercase tracking-widest mb-1">{stat.label}</p>
-                  <p className="text-[10px] md:text-xs text-text-muted font-bold opacity-70">{stat.sub}</p>
+                  <p className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 group-hover:text-brand transition-colors duration-500">{stat.value}</p>
+                  <p className="text-xs md:text-sm font-medium text-primary uppercase tracking-widest mb-1">{stat.label}</p>
+                  <p className="text-[10px] md:text-xs text-text-muted font-normal opacity-70">{stat.sub}</p>
                 </div>
 
                 {i === 2 && (
@@ -97,25 +97,6 @@ export default function WhyAbroad() {
         </div>
 
 
-        {/* Circular Icons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16">
-          {reasons.map((reason, index) => (
-            <motion.div
-              key={reason.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group flex flex-col items-center text-center p-6 md:p-8 rounded-[32px] md:rounded-[40px] hover:bg-white hover:shadow-2xl transition-all duration-500"
-            >
-              <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-white border border-primary/5 flex items-center justify-center mb-6 md:mb-8 shadow-xl group-hover:scale-110 group-hover:bg-brand group-hover:text-white transition-all duration-500">
-                <reason.icon className="w-8 h-8 md:w-10 md:h-10 transition-colors" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-heading font-black text-primary mb-3 md:mb-4 leading-tight">{reason.title}</h3>
-              <p className="text-text-muted text-xs md:text-sm font-bold leading-relaxed">{reason.description}</p>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

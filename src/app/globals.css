@@ -9,8 +9,8 @@
   --color-text-main: #1E293B;
   --color-text-muted: #64748B;
   
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Outfit", system-ui, sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
+  --font-heading: var(--font-montserrat), system-ui, sans-serif;
 
   --animate-reveal: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -31,7 +31,8 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-heading);
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 }
 

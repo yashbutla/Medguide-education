@@ -22,14 +22,14 @@ const challenges = [
 
 export default function Problem() {
   return (
-    <section className="py-16 md:py-24 bg-secondary/30 relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-secondary/30 relative overflow-hidden">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6">
             NEET is over. <br />
             <span className="text-brand">The real challenge begins.</span>
           </h2>
-          <p className="text-text-muted max-w-2xl mx-auto font-medium text-lg">
+          <p className="text-text-muted max-w-2xl mx-auto font-normal text-lg">
             Most students and parents fail to secure a seat not because of low marks, but because of these 3 critical factors.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function Problem() {
                 />
               </div>
               <div className="p-8 md:p-10">
-                <h3 className="text-2xl font-black text-primary mb-4">{item.title}</h3>
-                <p className="text-text-muted font-medium leading-relaxed">{item.desc}</p>
+                <h3 className="text-2xl font-bold text-primary mb-4">{item.title}</h3>
+                <p className="text-text-muted font-normal leading-relaxed">{item.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -60,7 +60,7 @@ export default function Problem() {
 
         <div className="mt-20 p-8 md:p-12 bg-primary rounded-[40px] text-center shadow-2xl relative overflow-hidden">
            <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
-           <p className="relative z-10 text-white text-xl md:text-3xl font-black italic">
+           <p className="relative z-10 text-white text-xl md:text-3xl font-bold italic">
              "The Solution: You don’t need an agent. You need a Mentor."
            </p>
         </div>
