@@ -1,5 +1,9 @@
 "use client";
 
+import dynamic from 'next/dynamic';
+
+const Dashboard = dynamic(() => import('@/components/admin/Dashboard'), { ssr: false });
+
 export default function AdminPage() {
-  return <div className="p-20 text-center font-black">Admin Dashboard Coming Soon</div>;
+  return <Dashboard />;
 }
