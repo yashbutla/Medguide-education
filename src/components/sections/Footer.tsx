@@ -67,10 +67,6 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-primary/5 text-xs text-text-muted font-bold tracking-wider gap-4">
           <p>© 2026 MedGuide Education. All rights reserved.</p>
-          <div className="flex gap-8">
-            <a href="#" className="hover:text-primary transition-colors uppercase">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors uppercase">Terms of Service</a>
-          </div>
         </div>
       </div>
 
