@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex items-center gap-8">
-            {["Why Abroad", "Testimonials", "Mentorship", "FAQs"].map((item) => (
+            {["Why MedGuide", "Testimonials", "Mentorship", "FAQs"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(" ", "-")}`}

@@ -35,7 +35,7 @@ const stats = [
 
 export default function WhyAbroad() {
   return (
-    <section id="why-abroad" className="py-12 md:py-20 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
+    <section id="why-medguide" className="py-12 md:py-20 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <SectionDivider color="white" />
       <FloatingBlobs />
       <MedicalGrid />
