@@ -99,16 +99,6 @@ export default function Hero() {
                 </a>
               </div>
 
-              <div className="flex items-center gap-3 py-4 border-t border-primary/5">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3].map((i) => (
-                    <img key={i} src={`https://i.pravatar.cc/100?img=${i + 20}`} alt="Student" className="w-8 h-8 rounded-full border-2 border-white shadow-sm object-cover" />
-                  ))}
-                </div>
-                <p className="text-[10px] text-text-muted font-bold uppercase tracking-widest">
-                  Trusted by <span className="text-brand">15,000+ students</span>
-                </p>
-              </div>
             </motion.div>
 
 
