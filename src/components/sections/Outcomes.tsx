@@ -44,7 +44,7 @@ export default function Outcomes() {
             </div>
           </div>
 
-          <div className="flex-1 w-full relative">
+          <div className="flex-1 w-full relative overflow-hidden lg:overflow-visible">
             <div className="relative z-10 rounded-[24px] md:rounded-[40px] overflow-hidden card-premium p-2 md:p-3 bg-white">
               <img 
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000" 

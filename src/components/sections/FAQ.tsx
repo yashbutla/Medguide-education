@@ -47,7 +47,7 @@ export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section id="faqs" className="py-12 md:py-20 relative bg-secondary/30 scroll-mt-24 md:scroll-mt-32">
+    <section id="faqs" className="py-12 md:py-20 relative bg-secondary/30 scroll-mt-24 md:scroll-mt-32 overflow-hidden">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12 md:mb-20">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary">
