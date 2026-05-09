@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 export default function Navbar() {
@@ -25,10 +26,10 @@ export default function Navbar() {
             ? "glass-light border-primary/10 shadow-lg"
             : "bg-transparent border-transparent"
           }`}>
-          <div className="flex items-center gap-2 md:gap-3">
+          <Link href="/" className="flex items-center gap-2 md:gap-3 cursor-pointer">
             <img src="/logo.png" alt="MedGuide Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-lg md:rounded-xl" />
             <span className="font-heading font-black text-lg md:text-2xl text-primary tracking-tighter">MedGuide</span>
-          </div>
+          </Link>
 
           <div className="hidden lg:flex items-center gap-8">
             {["Why MedGuide", "Testimonials", "Mentorship", "FAQs"].map((item) => (
