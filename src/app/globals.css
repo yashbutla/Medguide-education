@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-primary: #0F172A; /* Deep Navy */
+  --color-brand: #133B7A;   /* MedGuide Blue */
+  --color-accent: #D4A843;  /* MedGuide Gold */
+  --color-text-main: #1E293B;
+  --color-text-muted: #64748B;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Outfit", system-ui, sans-serif;
+
+  --animate-reveal: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #1E293B;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .glass-light {
+    @apply bg-white/70 backdrop-blur-2xl border border-white/20;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+  }
+
+  .premium-shadow {
+    box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.12);
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(rgba(19, 59, 122, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(rgba(212, 168, 67, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-500 active:scale-95 px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm flex items-center justify-center gap-3;
+    background: #0F172A;
+    color: white;
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.3);
+  }
+
+  .btn-premium:hover {
+    @apply -translate-y-1 bg-brand;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.4);
+  }
+
+  .btn-gold-dark {
+    @apply relative overflow-hidden transition-all duration-500 active:scale-95 px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm flex items-center justify-center gap-3;
+    background: #D4A843;
+    color: #0F172A;
+    box-shadow: 0 20px 40px -10px rgba(212, 168, 67, 0.3);
+  }
+
+  .btn-gold-dark:hover {
+    @apply -translate-y-1 bg-[#C49833];
+    box-shadow: 0 25px 50px -12px rgba(212, 168, 67, 0.4);
+  }
+
+  .floating-shape {
+    @apply absolute pointer-events-none opacity-20 transition-transform duration-1000;
+    filter: blur(80px);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Lenis CSS */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
