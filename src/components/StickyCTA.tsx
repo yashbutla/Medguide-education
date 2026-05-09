@@ -76,9 +76,12 @@ export default function StickyCTA() {
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden md:inline text-[10px] font-black uppercase tracking-widest">Community</span>
               </a>
-              <a href="#register" className="px-5 md:px-8 py-2 md:py-2.5 bg-[#0F172A] text-white text-[10px] md:text-xs font-black rounded-full flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/10">
+              <button 
+                onClick={() => window.dispatchEvent(new CustomEvent('open-registration-modal'))}
+                className="px-5 md:px-8 py-2 md:py-2.5 bg-[#0F172A] text-white text-[10px] md:text-xs font-black rounded-full flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/10"
+              >
                 Secure Seat <ArrowRight className="w-3 h-3 md:w-4 md:h-4" />
-              </a>
+              </button>
             </div>
           </div>
         </motion.div>

@@ -1,6 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import Marquee from "@/components/Marquee";
-import TrustedBy from "@/components/sections/TrustedBy";
+import Problem from "@/components/sections/Problem";
 import WhyAbroad from "@/components/sections/WhyAbroad";
 import Outcomes from "@/components/sections/Outcomes";
 import Speaker from "@/components/sections/Speaker";
@@ -12,6 +12,7 @@ import StickyCTA from "@/components/StickyCTA";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 import Navbar from "@/components/Navbar";
+import RegistrationModal from "@/components/RegistrationModal";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
-      <TrustedBy />
+      <Problem />
       <Testimonials />
       <Speaker />
       <WhyAbroad />
@@ -28,6 +29,7 @@ export default function Home() {
       <FinalCTA />
       <Footer />
       
+      <RegistrationModal />
       <StickyCTA />
       <ExitIntentPopup />
     </main>

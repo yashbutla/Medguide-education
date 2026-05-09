@@ -4,19 +4,16 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const outcomes = [
-  "Understanding NMC Gazette & Eligibility Criteria",
-  "Step-by-step University Selection Framework",
-  "Budgeting: Living Costs vs Tuition Fees",
-  "Scholarship Opportunities for Indian Students",
-  "FMGE / NExT Preparation Roadmap",
-  "Post-MBBS Career & PG Options Globally",
-  "Visa Process & Document Verification",
-  "Safety & Student Life in Foreign Countries",
+  "The Score-to-College Formula: Pick the best-fit for your NEET score",
+  "India vs. Abroad: The honest comparison of quality, cost, and validity",
+  "The 'Should I Repeat?' Test: Decide if a drop year is worth it",
+  "Financial Blueprint: MBBS from ₹2 Lakhs/year with zero donation",
+  "The NEXT/FMGE Reality: Prepare for Indian practice from Day 1",
 ];
 
 export default function Outcomes() {
   return (
-    <section className="py-16 md:py-32 relative bg-secondary/50">
+    <section className="py-16 md:py-24 relative bg-secondary/50">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="flex-1 text-center lg:text-left">
@@ -52,7 +49,7 @@ export default function Outcomes() {
               <img 
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000" 
                 alt="Medical Education" 
-                className="rounded-[20px] md:rounded-[32px] w-full h-[300px] md:h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="rounded-[20px] md:rounded-[32px] w-full h-[300px] md:h-[500px] object-cover transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
             </div>

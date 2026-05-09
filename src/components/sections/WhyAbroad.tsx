@@ -6,36 +6,36 @@ import { FloatingBlobs, SectionDivider, MedicalGrid } from "@/components/Decorat
 
 const reasons = [
   {
-    title: "University Selection",
-    description: "Expert assistance in choosing the right medical university based on your budget and preference.",
-    icon: GraduationCap,
+    title: "Led by Doctors, Not Agents",
+    description: "Run by practicing doctors who have walked this path and know the ground reality.",
+    icon: ShieldCheck,
   },
   {
-    title: "Career Guidance",
-    description: "Professional counseling to help you understand global medical career paths and PG options.",
-    icon: Globe,
-  },
-  {
-    title: "Full-Course Support",
-    description: "End-to-end support throughout your 6-year medical journey abroad.",
-    icon: BookOpen,
-  },
-  {
-    title: "USMLE/PLAB/NEXT",
-    description: "Specialized preparation resources for medical licensing exams worldwide.",
+    title: "8+ Years of Excellence",
+    description: "We’ve seen the rules change and we know exactly how to navigate them safely.",
     icon: Award,
+  },
+  {
+    title: "2,500+ Success Stories",
+    description: "Our students study in top government and private universities globally.",
+    icon: Users,
+  },
+  {
+    title: "End-to-End Support",
+    description: "From counseling to visa and hostel—we handle everything for you.",
+    icon: GraduationCap,
   },
 ];
 
 const stats = [
-  { value: "15,000+", label: "Counselling Sessions", sub: "held since 2016", icon: Users },
-  { value: "150+", label: "Partner Universities", sub: "across 10+ countries", icon: Globe },
-  { value: "12+", label: "Years Excellence", sub: "in medical consultancy", icon: ShieldCheck },
+  { value: "8+", label: "Years Excellence", sub: "Navigating Admissions", icon: ShieldCheck },
+  { value: "2,500+", label: "Success Stories", sub: "Studying Globally", icon: Users },
+  { value: "Doctors", label: "Led Institution", sub: "Not Commissions Driven", icon: Award },
 ];
 
 export default function WhyAbroad() {
   return (
-    <section id="why-abroad" className="py-16 md:py-32 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
+    <section id="why-abroad" className="py-16 md:py-24 bg-surface relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <SectionDivider color="white" />
       <FloatingBlobs />
       <MedicalGrid />
@@ -56,11 +56,11 @@ export default function WhyAbroad() {
               whileInView={{ opacity: 1, x: 0 }}
               className="text-3xl md:text-5xl font-heading font-black text-primary mb-6 md:mb-8"
             >
-              Beyond the <br />
-              <span className="text-brand">Ordinary.</span>
+              Led by <br />
+              <span className="text-brand">Doctors, Not Agents.</span>
             </motion.h2>
             <p className="text-base md:text-xl text-text-muted font-bold leading-relaxed max-w-xl mx-auto lg:mx-0">
-              MedGuide Education isn't just a consultancy; it's your lifelong partner in the medical world. We focus on quality, transparency, and student success.
+              Medguide Education is the only institution run by practicing doctors. We bypass the "agent traps" to focus on your medical career success.
             </p>
           </div>
           

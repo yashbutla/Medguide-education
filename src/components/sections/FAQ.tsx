@@ -6,20 +6,40 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "Is MBBS from abroad valid in India?",
-    answer: "Yes, as long as the university is recognized by the World Health Organization (WHO) and the degree is valid in the country of study, you are eligible to appear for the NEXT/FMGE exam in India to practice as a doctor.",
+    question: "Is this webinar really free? Why?",
+    answer: "Yes, it is 100% free. We believe that every student deserves the right information to avoid falling into 'agent traps.' Our goal is to empower you with the same knowledge we use to guide our successful students.",
   },
   {
-    question: "What is the total cost of MBBS abroad?",
-    answer: "The total cost (tuition + hostel) typically ranges from ₹15 Lakhs to ₹35 Lakhs depending on the country and university. This is significantly more affordable than private medical colleges in India.",
+    question: "I have a very low NEET score. Is there any point in attending?",
+    answer: "Absolutely. This webinar is actually more important for you. We specialize in finding NMC-recognized colleges in India and Abroad that accept lower scores without requiring massive donations.",
   },
   {
-    question: "Do I need to qualify NEET for MBBS abroad?",
-    answer: "Yes, qualifying NEET is mandatory for Indian students who wish to pursue MBBS abroad and later return to India to practice medicine.",
+    question: "Can my parents join?",
+    answer: "We highly encourage parents to attend as the financial and documentation sections are vital for them.",
   },
   {
-    question: "Which country is best for MBBS abroad?",
-    answer: "Russia, Georgia, Uzbekistan, and Kazakhstan are popular choices due to their affordable fees, quality of education, and English-medium programs.",
+    question: "My parents are worried about the safety of studying abroad. Will you cover this?",
+    answer: "Yes. Safety is our #1 priority. We will specifically discuss security measures, separate hostel facilities for girls, and the on-ground support we provide in countries like Russia, Georgia, and Uzbekistan.",
+  },
+  {
+    question: "Will you explain the CAP round and Choice Filling process?",
+    answer: "Yes. We will walk you through the 'Master Roadmap' of the counseling process. You’ll learn how a strategic choice-filling list can significantly increase your chances of getting a better college.",
+  },
+  {
+    question: "Why should I trust Medguide over a local admission agent?",
+    answer: "Because we are Practicing Doctors, not Agents. Agents are often driven by commissions from specific colleges. We are driven by your career success, backed by 8+ years of experience and 2,500+ success stories.",
+  },
+  {
+    question: "Will I be able to practice in India after studying MBBS abroad?",
+    answer: "Yes. We only recommend universities recognized by the WHO and the NMC (National Medical Commission). We also provide guidance on clearing the NEXT/FMGE exam required to practice in India.",
+  },
+  {
+    question: "I’m confused between Repeating NEET and taking admission now. Can you help?",
+    answer: "This is a major highlight of the webinar. We provide a 'Decision Matrix' to help you analyze if a drop year is worth it for you or if you should secure a seat in the current cycle.",
+  },
+  {
+    question: "Will there be a live Q&A session?",
+    answer: "Yes! At the end of the webinar, Dr. Mrunal Gagare will take live questions to address specific concerns regarding your score, budget, or college preferences.",
   },
 ];
 
@@ -27,7 +47,7 @@ export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section id="faqs" className="py-32 relative bg-secondary/30 scroll-mt-24 md:scroll-mt-32">
+    <section id="faqs" className="py-16 md:py-24 relative bg-secondary/30 scroll-mt-24 md:scroll-mt-32">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-32">
           <div className="lg:w-1/3">
@@ -35,9 +55,12 @@ export default function FAQ() {
             <p className="text-text-muted font-medium text-lg leading-relaxed mb-8">
               Everything you need to know before taking the first step towards your international medical career.
             </p>
-            <a href="#register" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('open-registration-modal'))}
+              className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+            >
               Still have questions? Register for the masterclass <Plus className="w-4 h-4" />
-            </a>
+            </button>
           </div>
 
           <div className="lg:w-2/3 space-y-4">

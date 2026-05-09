@@ -8,7 +8,7 @@ const row2 = ["r10", "r11", "r12", "r13", "r14", "r15", "r16", "r17"];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 md:py-32 relative bg-[#F8FAFC] overflow-hidden scroll-mt-24 md:scroll-mt-32">
+    <section id="testimonials" className="py-16 md:py-24 relative bg-[#F8FAFC] overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">

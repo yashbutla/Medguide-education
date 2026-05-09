@@ -5,7 +5,7 @@ import { ArrowRight, MessageCircle, ShieldCheck, Zap, Star, Users } from "lucide
 
 export default function FinalCTA() {
   return (
-    <section className="py-32 relative overflow-hidden bg-white">
+    <section className="py-16 md:py-24 relative overflow-hidden bg-white">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Main CTA Card with explicit Navy Background for contrast */}
@@ -24,19 +24,22 @@ export default function FinalCTA() {
               <Star className="w-3 h-3 fill-accent" /> Enrollment Open for 2026
             </div>
             
-            <h2 className="text-4xl md:text-8xl font-heading font-black text-white mb-6 md:mb-10 leading-[1.1] md:leading-[0.95] tracking-tight">
-              Ready to start <br />
-              <span className="text-[#D4A843]">The Journey?</span>
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 md:mb-10 leading-[1.1] tracking-tight">
+              One wrong decision <br />
+              <span className="text-[#D4A843]">Costs a Year.</span>
             </h2>
             
             <p className="text-sm md:text-xl text-white/60 font-bold mb-8 md:mb-14 leading-relaxed max-w-xl mx-auto px-4">
-              Join the elite circle of medical students who chose MedGuide. Your global medical career begins with a single click.
+              One wrong decision during counseling can cost you an entire academic year. Join our webinar to secure your seat and your future.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 px-4 md:px-0">
-              <a href="#register" className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 bg-white text-[#0F172A] text-sm md:text-base font-black rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 transition-all hover:scale-105 hover:bg-[#D4A843] hover:text-white">
+              <button 
+                onClick={() => window.dispatchEvent(new CustomEvent('open-registration-modal'))}
+                className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 bg-white text-[#0F172A] text-sm md:text-base font-black rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 transition-all hover:scale-105 hover:bg-[#D4A843] hover:text-white"
+              >
                 Reserve My Seat <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
-              </a>
+              </button>
               <a href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" target="_blank" className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-black rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 transition-all hover:bg-white/10">
                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5" /> Join Community
               </a>
