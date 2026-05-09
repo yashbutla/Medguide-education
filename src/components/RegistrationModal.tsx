@@ -76,6 +76,7 @@ export default function RegistrationModal() {
                     Secure Your <br />
                     <span className="text-brand">Webinar Seat</span>
                   </h2>
+                  <p className="text-brand font-black uppercase tracking-widest text-[10px] mb-2">Limited Spots Available!</p>
                   <p className="text-text-muted font-medium">
                     Join Dr. Mrunal Gagare and 15,000+ students in the Master Roadmap session.
                   </p>

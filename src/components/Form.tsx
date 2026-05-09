@@ -88,7 +88,7 @@ export default function Form({ compact = false }: { compact?: boolean }) {
           <Loader2 className="w-5 h-5 animate-spin" />
         ) : (
           <>
-            Register Now <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+            REGISTER FOR FREE <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
           </>
         )}
       </button>

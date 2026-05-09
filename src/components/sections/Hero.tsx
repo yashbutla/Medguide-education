@@ -84,7 +84,7 @@ export default function Hero() {
               </h1>
 
               <p className="text-sm md:text-base text-text-muted font-medium mb-6 md:mb-8 max-w-md leading-relaxed">
-                By <span className="text-primary font-black">Dr. Mrunal Gagare</span>. REGISTER FOR FREE | Limited Spots available for the 2026 cycle.
+                By <span className="text-primary font-black">Dr. Mrunal Gagare</span>. Secure your professional mentorship for the 2026 medical admission cycle.
               </p>
 
               <div id="register" className="mb-6 md:mb-8">
