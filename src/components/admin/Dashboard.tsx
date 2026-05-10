@@ -130,9 +130,12 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-white flex text-primary font-sans">
       {/* Sidebar */}
       <aside className="w-80 border-r border-primary/5 flex flex-col p-8 hidden lg:flex bg-surface/30">
-        <div className="mb-12 flex items-center gap-3">
+        <div className="mb-12 flex items-center gap-4">
           <img src="/logo.png" alt="Logo" className="w-12 h-12 rounded-2xl shadow-lg shadow-brand/20" />
-          <h2 className="text-xl font-heading font-black tracking-tight">MedGuide <span className="text-brand">Hub</span></h2>
+          <div className="flex flex-col leading-tight">
+            <span className="font-heading font-black text-xl text-primary tracking-tighter">MedGuide</span>
+            <span className="font-heading font-bold text-[10px] text-brand uppercase tracking-[0.2em] -mt-1">Education</span>
+          </div>
         </div>
 
         <nav className="flex-1 space-y-4">

@@ -73,33 +73,33 @@ export default function Hero() {
                   <span className="text-[9px] md:text-[10px] font-black text-white uppercase tracking-wider">Limited Spots Left</span>
                 </motion.div>
 
-                <div className="bg-white p-4 md:p-5 rounded-[24px] border-2 border-primary/5 shadow-xl flex items-center gap-4 group hover:border-brand/30 transition-all duration-300">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-brand/5 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all duration-500">
-                    <Calendar className="w-6 h-6 md:w-7 md:h-7" />
+                <div className="bg-white p-3.5 md:p-5 rounded-[24px] border border-primary/10 shadow-xl flex items-center gap-3 md:gap-4 group hover:border-brand/30 transition-all duration-300">
+                  <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-brand/5 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all duration-500 flex-shrink-0">
+                    <Calendar className="w-5 h-5 md:w-7 md:h-7" />
                   </div>
-                  <div>
-                    <p className="text-[9px] text-text-muted uppercase font-medium tracking-[0.2em] mb-1">Webinar Date</p>
-                    <p className="text-base md:text-xl font-bold text-primary uppercase tracking-tight">
+                  <div className="min-w-0">
+                    <p className="text-[8px] md:text-[9px] text-text-muted uppercase font-bold tracking-[0.2em] mb-0.5">Webinar Date</p>
+                    <p className="text-[13px] sm:text-base md:text-xl font-bold text-primary uppercase tracking-tight truncate">
                       {activeWebinar ? new Date(activeWebinar.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : "13th May, 2026"}
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-white p-4 md:p-5 rounded-[24px] border-2 border-primary/5 shadow-xl flex items-center gap-4 group hover:border-accent/30 transition-all duration-300">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-500">
-                    <Clock className="w-6 h-6 md:w-7 md:h-7" />
+                <div className="bg-white p-3.5 md:p-5 rounded-[24px] border border-primary/10 shadow-xl flex items-center gap-3 md:gap-4 group hover:border-accent/30 transition-all duration-300">
+                  <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-accent/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-500 flex-shrink-0">
+                    <Clock className="w-5 h-5 md:w-7 md:h-7" />
                   </div>
-                  <div>
-                    <p className="text-[9px] text-text-muted uppercase font-medium tracking-[0.2em] mb-1">Start Time</p>
-                    <p className="text-base md:text-xl font-bold text-primary uppercase tracking-tight">
+                  <div className="min-w-0">
+                    <p className="text-[8px] md:text-[9px] text-text-muted uppercase font-bold tracking-[0.2em] mb-0.5">Start Time</p>
+                    <p className="text-[13px] sm:text-base md:text-xl font-bold text-primary uppercase tracking-tight truncate">
                       {activeWebinar ? formatTime(activeWebinar.time) : "11:00 AM"}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h1 className="text-3xl md:text-5xl font-heading font-bold leading-[1.1] mb-4 tracking-tight text-primary">
-                The Master Roadmap of <br />
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-heading font-bold leading-[1.2] mb-6 tracking-tight text-primary text-balance">
+                The Master Roadmap of <br className="hidden sm:block" />
                 <span className="text-brand">Medical Admissions.</span>
               </h1>
 

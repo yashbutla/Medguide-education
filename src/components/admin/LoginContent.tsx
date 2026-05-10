@@ -47,7 +47,10 @@ export default function LoginContent() {
           <div className="w-20 h-20 bg-brand rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-brand/20">
             <ShieldCheck className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-4xl font-heading font-black text-primary mb-2">MedGuide Admin</h1>
+          <div className="flex flex-col items-center leading-tight">
+            <h1 className="text-4xl font-heading font-black text-primary tracking-tighter">MedGuide</h1>
+            <span className="text-sm font-heading font-bold text-accent uppercase tracking-[0.3em] -mt-1">Education Admin</span>
+          </div>
           <p className="text-text-muted font-bold tracking-tight">Access the student control center</p>
         </div>
 

@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "Why should I trust Medguide over a local admission agent?",
-    answer: "Because we are Practicing Doctors, not Agents. Agents are often driven by commissions from specific colleges. We are driven by your career success, backed by 8+ years of experience and 2,500+ success stories.",
+    answer: "Because we are Practicing Doctors, not Agents. Agents are often driven by commissions from specific colleges. We are driven by your career success, backed by 4+ years of experience and 1,200+ success stories.",
   },
   {
     question: "Will I be able to practice in India after studying MBBS abroad?",

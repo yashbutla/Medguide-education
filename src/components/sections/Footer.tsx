@@ -6,7 +6,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-heading font-bold mb-6 text-primary">MedGuide <span className="text-accent">Education</span></h3>
+            <div className="flex items-center gap-3 mb-6">
+              <img src="/logo.png" alt="MedGuide Logo" className="w-10 h-10 object-contain rounded-xl" />
+              <div className="flex flex-col leading-tight">
+                <span className="font-heading font-black text-2xl text-primary tracking-tighter">MedGuide</span>
+                <span className="font-heading font-bold text-[11px] text-accent uppercase tracking-[0.25em] -mt-1">Education</span>
+              </div>
+            </div>
             <p className="text-text-muted max-w-sm mb-8 font-medium">
               Empowering Indian students to pursue high-quality, affordable medical education internationally. Your bridge to a global medical career.
             </p>

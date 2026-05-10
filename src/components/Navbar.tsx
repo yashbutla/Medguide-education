@@ -26,9 +26,12 @@ export default function Navbar() {
             ? "glass-light border-primary/10 shadow-lg"
             : "bg-transparent border-transparent"
           }`}>
-          <Link href="/" className="flex items-center gap-2 md:gap-3 cursor-pointer">
-            <img src="/logo.png" alt="MedGuide Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-lg md:rounded-xl" />
-            <span className="font-heading font-black text-lg md:text-2xl text-primary tracking-tighter">MedGuide</span>
+          <Link href="/" className="flex items-center gap-2 md:gap-3 cursor-pointer group">
+            <img src="/logo.png" alt="MedGuide Logo" className="w-8 h-8 md:w-11 md:h-11 object-contain rounded-lg md:rounded-xl transition-transform group-hover:scale-110" />
+            <div className="flex flex-col leading-tight">
+              <span className="font-heading font-black text-lg md:text-2xl text-primary tracking-tighter">MedGuide</span>
+              <span className="font-heading font-bold text-[9px] md:text-[11px] text-accent uppercase tracking-[0.25em] -mt-1 opacity-90">Education</span>
+            </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">

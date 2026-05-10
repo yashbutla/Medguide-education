@@ -34,7 +34,7 @@ export default function Speaker() {
             <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8">
               <div className="bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-xl border border-primary/5 text-center">
                 <p className="text-[8px] md:text-[10px] font-medium uppercase tracking-widest text-brand mb-1">Experience</p>
-                <p className="text-base md:text-xl font-bold text-primary leading-none">8+ Years</p>
+                <p className="text-base md:text-xl font-bold text-primary leading-none">4+ Years</p>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Speaker() {
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <p className="text-2xl md:text-4xl font-bold text-primary mb-6">Dr. Mrunal Gagare</p>
             <p className="text-sm md:text-lg text-text-muted font-normal leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify md:text-left">
-              Director, Medguide Education. A practicing doctor and education strategist who has dedicated 8 years to helping Indian students bypass donation culture and find quality medical education worldwide.
+              Director, Medguide Education. A practicing doctor and education strategist who has dedicated 4 years to helping Indian students bypass donation culture and find quality medical education worldwide.
             </p>
           </div>
         </div>

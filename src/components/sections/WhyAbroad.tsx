@@ -11,12 +11,12 @@ const reasons = [
     icon: ShieldCheck,
   },
   {
-    title: "8+ Years of Excellence",
+    title: "4+ Years of Excellence",
     description: "We’ve seen the rules change and we know exactly how to navigate them safely.",
     icon: Award,
   },
   {
-    title: "2,500+ Success Stories",
+    title: "1,200+ Success Stories",
     description: "Our students study in top government and private universities globally.",
     icon: Users,
   },
@@ -28,8 +28,8 @@ const reasons = [
 ];
 
 const stats = [
-  { value: "8+", label: "Years of Excellence", sub: "We’ve seen the rules change and we know how to navigate them.", icon: Award },
-  { value: "2,500+", label: "Success Stories", sub: "Our students are currently studying in top government and private universities globally.", icon: Users },
+  { value: "4+", label: "Years of Excellence", sub: "We’ve seen the rules change and we know how to navigate them.", icon: Award },
+  { value: "1,200+", label: "Success Stories", sub: "Our students are currently studying in top government and private universities globally.", icon: Users },
   { value: "End-to-End", label: "Support", sub: "From the first counseling session to getting your visa and hostel—we handle it all.", icon: GraduationCap },
 ];
 
