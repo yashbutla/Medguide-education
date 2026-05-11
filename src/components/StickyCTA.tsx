@@ -69,7 +69,7 @@ export default function StickyCTA() {
             
             <div className="flex items-center gap-2">
               <a 
-                href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" 
+                href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ" 
                 target="_blank" 
                 className="p-2 md:px-4 md:py-2 bg-emerald-500/10 text-emerald-600 rounded-full flex items-center gap-2 transition-all hover:bg-emerald-500 hover:text-white"
               >

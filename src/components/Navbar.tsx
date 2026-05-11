@@ -54,7 +54,7 @@ export default function Navbar() {
               Join <span className="hidden xs:inline ml-1">Masterclass</span>
             </a>
             <a
-              href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa"
+              href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 md:p-2.5 bg-emerald-500/10 text-emerald-600 rounded-full hover:bg-emerald-500 hover:text-white transition-all"

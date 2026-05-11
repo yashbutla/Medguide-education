@@ -78,7 +78,7 @@ export default function Footer() {
 
       {/* Floating WhatsApp CTA */}
       <a 
-        href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" 
+        href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ" 
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-xl z-50 hover:scale-110 active:scale-95 transition-all group"

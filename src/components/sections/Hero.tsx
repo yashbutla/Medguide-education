@@ -110,7 +110,7 @@ export default function Hero() {
               <div id="register" className="mb-6 md:mb-8 relative">
                 <Form compact />
                 <a
-                  href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa"
+                  href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ"
                   target="_blank"
                   className="w-full mt-4 py-3 bg-emerald-500/5 hover:bg-emerald-500/10 text-emerald-600 rounded-2xl border border-emerald-500/20 flex items-center justify-center gap-3 transition-all group"
                 >

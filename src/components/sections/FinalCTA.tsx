@@ -40,7 +40,7 @@ export default function FinalCTA() {
               >
                 Reserve My Seat <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
               </button>
-              <a href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" target="_blank" className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-bold rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 transition-all hover:bg-white/10">
+              <a href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ" target="_blank" className="w-full sm:w-auto px-8 md:px-12 py-4 md:py-6 bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-bold rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 transition-all hover:bg-white/10">
                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5" /> Join Community
               </a>
             </div>

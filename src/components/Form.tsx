@@ -95,7 +95,7 @@ export default function Form({ compact = false }: { compact?: boolean }) {
 
       {!compact && (
         <a 
-          href="https://chat.whatsapp.com/EH34BO2QNOcBUQ9ZtTVufa" 
+          href="https://chat.whatsapp.com/KdFHxTC4BV7CaG3jm1iTbJ" 
           target="_blank"
           rel="noopener noreferrer"
           className="w-full py-5 bg-accent text-primary rounded-2xl font-black uppercase tracking-widest text-sm flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-xl shadow-accent/20 mt-4"
